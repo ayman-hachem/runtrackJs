@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparition/Disparition d'un article</title>
+</head>
+<body>
+  <button id="button" onclick="showhide()">Afficher/Disparaitre l'article</button>
+
+  <script>
+    function showhide() {
+      var article = document.getElementById('article');
+
+      // Vérifie si l'article existe déjà
+      if (article) {
+        // S'il existe, le supprime
+        article.parentNode.removeChild(article);
+      } else {
+        // S'il n'existe pas, ça le crée et ça l'ajoute à la page
+        var articleText = "L'important n'est pas la chute, mais l'atterrissage.";
+        var newArticle = document.createElement('article');
+        newArticle.textContent = articleText;
+        newArticle.id = 'article';
+        document.body.appendChild(newArticle);
+      }
+    }
+  </script>
+</body>
+</html>
+
