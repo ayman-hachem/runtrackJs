@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemple de citation</title>
+</head>
+<body>
+  <article id="citation">
+    "La vie a beaucoup plus d’imagination que nous"
+  </article>
+
+  <button id="button">Afficher la citation</button>
+
+  <script>
+    // Sélection du bouton
+    var button = document.getElementById('button');
+    
+    // Ajout d'un écouteur d'événements au bouton pour détecter les clics
+    button.addEventListener('click', function() {
+      // Récupération de l'élément de citation
+      var citationElement = document.getElementById('citation');
+      // Récupération du texte de la citation
+      var citation = citationElement.textContent.trim();
+      // Affichage du texte de la citation dans la console
+      console.log(citation);
+    });
+  </script>
+</body>
+</html>
