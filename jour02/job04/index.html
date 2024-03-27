@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keylogger</title>
+</head>
+<body>
+<textarea id="keylogger" rows="4" cols="50"></textarea>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const textarea = document.getElementById('keylogger');
+    
+    // Écouter les événements de clavier
+    document.addEventListener('keydown', function(event) {
+        const keyPressed = event.key.toLowerCase(); // Récupérer la touche en minuscule
+        
+        // Vérifier si la touche est une lettre de l'alphabet (a-z)
+        if (/^[a-z]$/.test(keyPressed)) {
+            // Ajouter la lettre au textarea
+            if (document.activeElement === textarea) {
+                textarea.value += keyPressed.repeat(2); // Ajouter deux fois la lettre si le focus est dans le textarea
+            } else {
+                textarea.value += keyPressed; // Ajouter une fois la lettre si le focus n'est pas dans le textarea
+            }
+        }
+    });
+});
+</script>
+
+</body>
+</html>
