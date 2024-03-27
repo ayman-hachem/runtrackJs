@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (/^[a-z]$/.test(keyPressed)) {
             // Ajouter la lettre au textarea
             if (document.activeElement === textarea) {
-                textarea.value += keyPressed.repeat(2); // Ajouter deux fois la lettre si le focus est dans le textarea
+                textarea.value += keyPressed.repeat(1); // Ajouter deux fois la lettre si le focus est dans le textarea
             } else {
                 textarea.value += keyPressed; // Ajouter une fois la lettre si le focus n'est pas dans le textarea
             }
