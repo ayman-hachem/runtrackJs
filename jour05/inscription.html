@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <title>inscription</title>
 </head>
 <body>
     <header>
@@ -11,5 +12,43 @@
         <a href="inscription.html">inscription</a>
         <a href="connexion.html">connection</a>
     </header>
+    <main>
+        <form action="/formulaire" method="post">
+        <div class="box">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Ecrivez votre nom" required><br>
+        </div>
+        
+        <div class="box"> 
+            <label for="prenom">prenom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Ecrivez votre prenom" required><br>
+        </div>
+
+        <div class="box"> 
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="Ecrivez votre email" required><br>
+        </div>
+
+        <div class="box">   
+            <label for="mot de passe">mot de passe</label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" minlength="8" placeholder="Ecrivez votre mot de passe" required><br>
+        </div>
+
+        <div class="box">
+            <label for="adresse">adresse</label>
+            <input type="text" id="adresse" name="adresse" placeholder="Ecrivez votre adresse" required><br>
+        </div>
+
+        <div class="box">
+            <label for="code_postal">code postal</label>
+            <input type="number" id="code_postal" name="code_postal" placeholder="Ecrivez votre code postal" required><br>
+        </div>
+
+        <div class="button">
+            <input type="submit" id="inscription" value="inscription">
+        </div>
+        
+
+    </main>
 </body>
 </html>

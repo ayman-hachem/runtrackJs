@@ -1,0 +1,62 @@
+
+    header {
+        background-color: green;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    
+    header a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        float: right;
+        display: flex;
+       
+
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .box {
+        margin-bottom: 15px;
+    }
+    
+    .box label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .box input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .button input[type="submit"] {
+        background-color: green;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .button input[type="submit"]:hover {
+        background-color: green;
+    }
