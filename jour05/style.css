@@ -15,9 +15,11 @@
     header a {
         color: white;
         text-decoration: none;
-        margin: 0 10px;
+        margin: 10 10px;
         float: right;
         display: flex;
+        /* list-style: none; */
+
     }
     
     main {
