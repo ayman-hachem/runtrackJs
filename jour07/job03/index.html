@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>formulaire</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+              <ul class="left hide-on-med-and-down">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html">inscription</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="index.html">Rechercher</a></li>
+              </ul>
+            </div>
+          </nav>
+                
+    </header>
+
+        <main>
+            <section class="formulaire">
+                
+                <legend>selectionner votre civilité:</legend>
+                
+                <div>
+                    <input type="radio" id="Homme" name="Homme" value="Homme" checked />
+                    <label for="Homme">Homme</label>
+                
+                </div>
+                
+                <div>
+                    <input type="radio" id="Femme" name="Femme" value="Femme" />
+                    <label for="Femme">Femme</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="animal" name="animal" value="animal" />
+                    <label for="animal">Animal</label>
+                </div>     
+                <br>
+
+                <div>
+                    <label for="prenom">prenom</label>
+                    <input type="text" id="prenom" placeholder="écrivez votre prenom" required>
+                </div>
+
+                <div>
+                    <label for="nom">nom</label>
+                    <input type="text" id="nom" placeholder="écrivez votre nom" required>
+                </div>
+
+                <div>
+                    <label for="adresse">adresse: </label>
+                    <input type="text" id="adresse" placeholder="écrivez votre adresse" required>
+                </div>
+                <div>
+                    <label for="mot_de passe">mot de passe: </label>
+                    <input type="password" id="mot_de_passe" placeholder="écrivez votre mot de passe" min="8" required>
+                </div>
+                <div>
+                    <label for="prenom">prenom: </label>
+                    <input type="text" id="prenom" placeholder="écrivez votre prenom">
+                </div>
+                <br>
+
+                <div class="checkbox">
+                    <label for="passion">passion: </label>
+                    <input type="checkbox" id="informatique" name="informatique" checked />
+                    <label for="informatique">Informatique</label>
+                </div>
+        
+                <div class="checkbox">
+                    <input type="checkbox" id="sport" name="sport" checked />
+                    <label for="sport">Sport</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="voyage" name="voyage" checked />
+                    <label for="voyage">Voyage</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="lecture" name="lecture" checked />
+                    <label for="lecture">Lecture</label>
+                </div>
+
+                <div class="button">
+                    <button id="button">validation</button>
+                    
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                  <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="rechercher.html">Rechercher</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+</body>
+</html>
