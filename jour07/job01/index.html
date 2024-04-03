@@ -8,15 +8,89 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">Acceuil</a>
+            <a href="index.html">Accueil</a>
             <a href="index.html">Inscripton</a>
             <a href="index.html">Connexion</a>
             <a href="index.html">Rechercher</a>
         </nav>
     </header>
+
+        <main>
+            <section class="formulaire">
+                
+                <legend>selectionner votre civilité:</legend>
+                
+                <div>
+                    <input type="radio" id="Homme" name="Homme" value="Homme" checked />
+                    <label for="Homme">Homme</label>
+                
+                </div>
+                
+                <div>
+                    <input type="radio" id="Femme" name="Femme" value="Femme" />
+                    <label for="Femme">Femme</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="animal" name="animal" value="animal" />
+                    <label for="animal">Animal</label>
+                </div>     
+                <br>
+
+                <div>
+                    <label for="prenom">prenom</label>
+                    <input type="text" id="prenom" placeholder="écrivez votre prenom" required>
+                </div>
+
+                <div>
+                    <label for="nom">nom</label>
+                    <input type="text" id="nom" placeholder="écrivez votre nom" required>
+                </div>
+
+                <div>
+                    <label for="adresse">adresse: </label>
+                    <input type="text" id="adresse" placeholder="écrivez votre adresse" required>
+                </div>
+                <div>
+                    <label for="mot_de passe">mot de passe: </label>
+                    <input type="password" id="mot_de_passe" placeholder="écrivez votre mot de passe" min="8" required>
+                </div>
+                <div>
+                    <label for="prenom">prenom: </label>
+                    <input type="text" id="prenom" placeholder="écrivez votre prenom">
+                </div>
+                <div class="checkbox">
+                    <label for="passion">passion: </label>
+                    <input type="checkbox" id="informatique" name="informatique" checked />
+                    <label for="informatique">Informatique</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="sport" name="sport" checked />
+                    <label for="sport">Sport</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="voyage" name="voyage" checked />
+                    <label for="voyage">Voyage</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="lecture" name="lecture" checked />
+                    <label for="lecture">Lecture</label>
+                </div>
+
+                <div class="button">
+                    <button id="button">validation</button>
+                    
+                </div>
+
+            </section>
+
+        </main>
+
     <footer>
         <nav>
-            <a href="index.html">Acceuil</a>
+            <a href="index.html">Accueil</a>
             <a href="index.html">Inscripton</a>
             <a href="index.html">Connexion</a>
             <a href="index.html">Rechercher</a>
